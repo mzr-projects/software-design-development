@@ -1,4 +1,4 @@
-package com.mt.sdd.softwaredesigndevelopment;
+package com.mt.sdd;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

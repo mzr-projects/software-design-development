@@ -1,4 +1,4 @@
-package com.mt.sdd;
+package com.mt.sdd.dtos;
 
 import lombok.Getter;
 import lombok.Setter;
