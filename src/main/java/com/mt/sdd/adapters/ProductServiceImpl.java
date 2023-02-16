@@ -1,10 +1,10 @@
-package com.mt.sdd.services.impls;
+package com.mt.sdd.adapters;
 
-import com.mt.sdd.dtos.ProductDto;
-import com.mt.sdd.entities.Product;
-import com.mt.sdd.mappers.ProductMapper;
-import com.mt.sdd.repositories.ProductRepository;
-import com.mt.sdd.services.ProductService;
+import com.mt.sdd.domains.product.ProductDto;
+import com.mt.sdd.domains.product.Product;
+import com.mt.sdd.domains.product.mappers.ProductMapper;
+import com.mt.sdd.ports.ProductRepository;
+import com.mt.sdd.ports.ProductService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 

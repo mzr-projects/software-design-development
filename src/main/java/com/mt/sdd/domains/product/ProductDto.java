@@ -1,4 +1,4 @@
-package com.mt.sdd.dtos;
+package com.mt.sdd.domains.product;
 
 import lombok.Getter;
 import lombok.Setter;

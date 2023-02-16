@@ -1,6 +1,6 @@
-package com.mt.sdd;
+package com.mt.sdd.adapters;
 
-import com.mt.sdd.dtos.ProductDto;
+import com.mt.sdd.domains.product.ProductDto;
 import lombok.extern.slf4j.Slf4j;
 
 import java.util.ArrayList;

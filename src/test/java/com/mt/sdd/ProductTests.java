@@ -2,10 +2,10 @@ package com.mt.sdd;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
-import com.mt.sdd.dtos.ProductDto;
-import com.mt.sdd.entities.Product;
-import com.mt.sdd.repositories.ProductRepository;
-import com.mt.sdd.services.ProductService;
+import com.mt.sdd.domains.product.ProductDto;
+import com.mt.sdd.domains.product.Product;
+import com.mt.sdd.ports.ProductRepository;
+import com.mt.sdd.ports.ProductService;
 import jakarta.annotation.Resource;
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.EntityManagerFactory;
@@ -30,7 +30,7 @@ import java.util.Optional;
 @SpringBootTest
 @Transactional
 @WebAppConfiguration
-class SoftwareDesignDevelopmentApplicationTests {
+class ProductTests {
 
     private final Gson gson = new GsonBuilder().create();
 

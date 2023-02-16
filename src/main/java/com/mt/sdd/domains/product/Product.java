@@ -1,4 +1,4 @@
-package com.mt.sdd.entities;
+package com.mt.sdd.domains.product;
 
 import jakarta.persistence.*;
 import lombok.Getter;

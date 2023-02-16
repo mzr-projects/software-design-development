@@ -1,7 +1,7 @@
 package com.mt.sdd.controllers;
 
-import com.mt.sdd.ProductInMemoryDB;
-import com.mt.sdd.dtos.ProductDto;
+import com.mt.sdd.adapters.ProductInMemoryDB;
+import com.mt.sdd.domains.product.ProductDto;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -12,7 +12,7 @@ import java.util.List;
 @RestController
 @RequestMapping(value = "/standalone/mock")
 @Slf4j
-public class SoftwareDesignDevController {
+public class ProductMockController {
 
     @PostMapping("/create")
     public ResponseEntity<String> create(@RequestBody ProductDto productDto) {

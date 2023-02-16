@@ -1,10 +1,8 @@
-package com.mt.sdd.mappers;
+package com.mt.sdd.domains.product.mappers;
 
-import com.mt.sdd.dtos.ProductDto;
-import com.mt.sdd.entities.Product;
+import com.mt.sdd.domains.product.Product;
+import com.mt.sdd.domains.product.ProductDto;
 import org.springframework.stereotype.Component;
-
-import java.time.Period;
 
 @Component
 public class ProductMapper {

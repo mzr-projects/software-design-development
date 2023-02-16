@@ -1,7 +1,7 @@
-package com.mt.sdd.services;
+package com.mt.sdd.ports;
 
-import com.mt.sdd.dtos.ProductDto;
-import com.mt.sdd.entities.Product;
+import com.mt.sdd.domains.product.ProductDto;
+import com.mt.sdd.domains.product.Product;
 
 import java.util.List;
 

@@ -1,6 +1,6 @@
-package com.mt.sdd.repositories;
+package com.mt.sdd.ports;
 
-import com.mt.sdd.entities.Product;
+import com.mt.sdd.domains.product.Product;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 
