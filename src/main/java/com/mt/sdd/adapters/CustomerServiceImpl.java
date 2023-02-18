@@ -48,6 +48,12 @@ public class CustomerServiceImpl implements IDDService<CustomerDto, Customer> {
         log.info("Cart with id : {} deleted.", customerId);
     }
 
+    public void deleteByObject(Customer customer){
+        customerRepository.delete(customer);
+        log.info("Customer with id : {} deleted.", customer.getId());
+
+    }
+
     @Override
     public void edit(CustomerDto customerDto) {
 

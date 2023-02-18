@@ -84,18 +84,23 @@ public class CustomerTest {
         log.info("Customer is : {}", customerTemp);
         log.info("Cart associated with customer fetched from database : {}", customer.getCart());
 
-        customerService.deleteById(customer.getId());
+        //customerService.deleteById(customer.getId());
         //customerService.deleteCartById(customer.getCart().getId());
+        /*
+         * The cascade deletion works by passing the whole object to the delete method.
+         * Not just finding it with ID
+         * */
+        customerService.deleteByObject(customerTemp.get());
 
         List<Cart> cartTemp = customerService.findAllCarts();
         List<Customer> customers = customerService.findAllCustomers();
 
         cartTemp.forEach((cart) -> log.info(cart.toString()));
-        double cartAmount = cartTemp.stream().findFirst().get().getAmount();
+        Cart cart = cartTemp.stream().findFirst().orElse(null);
 
         Assertions.assertEquals(customerTemp.get().getName(), customer.getName());
-        Assertions.assertEquals(cartTemp.size(), 1);
-        Assertions.assertEquals(cartAmount, customerDto.getAmount());
+        Assertions.assertNull(cart);
         Assertions.assertEquals(customers.size(), 0);
+        Assertions.assertEquals(cartTemp.size(), 0);
     }
 }
