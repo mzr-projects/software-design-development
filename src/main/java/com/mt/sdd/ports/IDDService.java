@@ -1,5 +1,6 @@
 package com.mt.sdd.ports;
 
+import java.util.Collection;
 import java.util.List;
 
 public interface IDDService<T,U> {
@@ -10,5 +11,5 @@ public interface IDDService<T,U> {
 
     void edit(T t);
 
-    List<T> findAll();
+    Collection<T> findAll();
 }
