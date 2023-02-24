@@ -38,6 +38,10 @@ public class BookServiceImpl implements IDDService<BookDto, Book> {
         bookRepository.deleteById(book.getId());
     }
 
+    public void deleteByObject(Book book){
+        bookRepository.delete(book);
+    }
+
     @Override
     public void edit(BookDto bookDto) {
         bookDto.setName("LA");

@@ -158,8 +158,8 @@ class BookTests {
         bookDto.setName("Harry Potter");
         bookDto.setCity("New York");
 
-        bookServiceImpl.create(bookDto);
-        bookServiceImpl.delete(bookDto);
+        Book book = bookServiceImpl.create(bookDto);
+        bookServiceImpl.deleteByObject(book);
         //shippingServiceImpl.delete(book.getShipping());
 
         Assertions.assertTrue(bookRepository.findAll().isEmpty());
@@ -175,7 +175,7 @@ class BookTests {
         bookDto.setName("Lord of the Rings");
         bookDto.setCity("LA");
 
-        bookServiceImpl.create(bookDto);
+        Book book = bookServiceImpl.create(bookDto);
         shippingServiceImpl.edit(bookDto);
 
         Assertions.assertTrue(bookRepository.findAll().isEmpty());
